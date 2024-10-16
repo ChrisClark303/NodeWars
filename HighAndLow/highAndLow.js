@@ -1,20 +1,17 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.highAndLow = void 0;
-var highAndLow = /** @class */ (function () {
-    function highAndLow() {
-    }
-    highAndLow.process = function (numberString) {
-        var numbers = numberString
+class highAndLow {
+    static process(numberString) {
+        const numbers = numberString
             .split(" ")
             .map(Number)
-            .sort(function (x, y) {
+            .sort((x, y) => {
             return x - y;
         });
-        var lowest = numbers[0];
-        var highest = numbers[numbers.length - 1];
-        return "".concat(highest, " ").concat(lowest);
-    };
-    return highAndLow;
-}());
+        const lowest = numbers[0];
+        const highest = numbers[numbers.length - 1];
+        return `${highest} ${lowest}`;
+    }
+}
 exports.highAndLow = highAndLow;

@@ -2,9 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = spinWords;
 function spinWords(sentence) {
-    var words = sentence.split(" ");
+    const words = sentence.split(" ");
     return words
-        .map(function (w) {
+        .map((w) => {
         if (shouldSpinWord(w)) {
             return spinWord(w);
         }

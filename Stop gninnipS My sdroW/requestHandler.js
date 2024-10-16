@@ -1,9 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = stopGninnipSRequestHandler;
-var stopGnippips_1 = require("./stopGnippips");
-function stopGninnipSRequestHandler(_a) {
-    var sentence = _a.sentence;
+const stopGnippips_1 = __importDefault(require("./stopGnippips"));
+function stopGninnipSRequestHandler({ sentence }) {
     if (!sentence) {
         return "";
     }

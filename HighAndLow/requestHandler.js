@@ -1,9 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = highAndLowRequestHandler;
-var highAndLow_1 = require("./highAndLow");
-function highAndLowRequestHandler(_a) {
-    var numbers = _a.numbers;
+const highAndLow_1 = require("./highAndLow");
+function highAndLowRequestHandler({ numbers }) {
     if (!numbers) {
         return "";
     }
